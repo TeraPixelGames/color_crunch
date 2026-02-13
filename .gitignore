@@ -1,0 +1,74 @@
+# -----------------------------
+# Godot
+# -----------------------------
+.godot/
+.import/
+export_presets.cfg.bak
+
+# Editor-specific temporary data
+*.translation
+*.tmp
+
+# -----------------------------
+# Build artifacts
+# -----------------------------
+build/
+dist/
+bin/
+out/
+
+# Android generated files
+android/
+
+# GDUnit reports
+reports/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+*.stackdump
+*.pid
+
+# Local debug/test logs generated in this project
+boot_trace.log
+check_session.log
+check_session2.log
+check_session3.log
+gdunit_run.log
+launch_after_bootfix.log
+launch_headless.log
+launch_window.log
+launch_window_afterfix.log
+live_run.log
+live_run_afterfix.log
+probe_runner.log
+ran.txt
+runtest_wrapper.log
+runtest_wrapper2.log
+runtest_wrapper_uat.log
+test_setup.log
+tmp_ps.log
+unit_after_bootfix.log
+uat_after_bootfix.log
+warmup.log
+warmup2.log
+warmup3.log
+warmup4.log
+
+# -----------------------------
+# IDE/editor
+# -----------------------------
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
