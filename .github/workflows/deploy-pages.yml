@@ -55,10 +55,10 @@ jobs:
         run: $GODOT_BIN --headless --editor --path . --quit
 
       - name: Run GDUnit4 Unit Tests
-        run: $GODOT_BIN --headless --path . -s res://addons/gdUnit4/bin/GdUnitCmdTool.gd -a tests/unit --ignoreHeadlessMode -c
+        run: bash addons/gdUnit4/runtest.sh --godot_binary "$GODOT_BIN" -a tests/unit --ignoreHeadlessMode -c
 
       - name: Run GDUnit4 UAT Tests
-        run: $GODOT_BIN --headless --path . -s res://addons/gdUnit4/bin/GdUnitCmdTool.gd -a tests/uat --ignoreHeadlessMode -c
+        run: bash addons/gdUnit4/runtest.sh --godot_binary "$GODOT_BIN" -a tests/uat --ignoreHeadlessMode -c
 
       - name: Upload Test Reports
         if: always()

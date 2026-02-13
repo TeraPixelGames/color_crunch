@@ -14,8 +14,12 @@ export_presets.cfg.bak
 # -----------------------------
 build/
 dist/
-bin/
+/bin/
 out/
+
+# Keep tool binaries/scripts that are part of source-controlled addons
+!addons/gdUnit4/bin/
+!addons/gdUnit4/bin/**
 
 # Android generated files
 android/
